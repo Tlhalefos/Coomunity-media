@@ -1,0 +1,277 @@
+/* === style.css — external stylesheet for Our Community (Lesotho community, English version) === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background: #f9f3e9;  /* warm earth tone */
+  color: #2c3e2b;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* consistent layout container */
+.page-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  flex: 1;
+  width: 100%;
+}
+
+/* navigation — with Basotho branding (English) */
+nav {
+  background: #ffffffec;
+  backdrop-filter: blur(8px);
+  border-radius: 60px;
+  padding: 0.8rem 2rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 8px 20px rgba(95, 67, 23, 0.08);
+  border: 1px solid #dac0a1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.nav-brand {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #7b3f00;
+  letter-spacing: 0.5px;
+}
+
+.sotho-tag {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #a5714c;
+  margin-left: 0.5rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem 2rem;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 550;
+  color: #6b4226;
+  font-size: 1.15rem;
+  padding: 0.3rem 0;
+  border-bottom: 2px solid transparent;
+  transition: 0.2s;
+}
+
+nav a:hover, nav a.active {
+  border-bottom-color: #b58b5b;
+  color: #4e2f18;
+}
+
+/* headings with Lesotho flavour (English) */
+h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #4b3621;
+  margin-bottom: 1.5rem;
+  border-left: 10px solid #b58b5b;
+  padding-left: 1.8rem;
+  line-height: 1.2;
+}
+
+.sotho-large {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #7b5e4a;
+  margin-top: 0.3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 550;
+  margin: 2.2rem 0 1.2rem;
+  color: #5f4a36;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  border-bottom: 2px dashed #d4b28c;
+  padding-bottom: 0.4rem;
+}
+
+/* hero */
+.hero-panel {
+  background: linear-gradient(135deg, #f9e9da, #f2d9c0);
+  border-radius: 60px;
+  padding: 2rem 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.sotho-quote {
+  font-size: 1.6rem;
+  font-style: italic;
+  color: #6b4f36;
+  margin: 1rem 0 0;
+  text-align: center;
+  font-weight: 400;
+}
+
+/* grids */
+.grid-2col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.grid-3col {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 2rem 1.5rem;
+}
+
+.flex-event-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background: #efe2d4;
+  padding: 2rem;
+  border-radius: 48px;
+}
+
+/* cards with community theme */
+.card {
+  background: #fffffffa;
+  border-radius: 32px;
+  padding: 1.8rem 1.5rem;
+  box-shadow: 0 8px 22px #d9c2ac33;
+  border: 1px solid #eddccb;
+  transition: all 0.2s;
+}
+
+.community-card, .event-card, .contact-card, .video-card {
+  background: #fffbf5;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 28px;
+  background: #d9c2ac;
+  border: 2px solid #f0e0d0;
+}
+
+.caption {
+  font-size: 1rem;
+  color: #5f4a36;
+  margin: 0.8rem 0 0.4rem;
+  font-style: italic;
+  border-left: 4px solid #c69b7a;
+  padding-left: 1rem;
+}
+
+/* video wrapper */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 36px;
+  overflow: hidden;
+  box-shadow: 0 20px 30px -10px #ac8e74;
+  background: #2e241e;
+  border: 3px solid #e7cfb5;
+}
+
+.video-wrapper video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #2b1f18;
+}
+
+/* voice styling (translated) */
+.sotho-voice {
+  font-style: italic;
+  background: #f5ede4;
+  padding: 0.8rem 1.2rem;
+  border-radius: 50px;
+  color: #5b3f2b;
+  margin-top: 1rem;
+  border-left: 4px solid #b48b63;
+}
+
+/* lists with custom markers */
+ul, ol {
+  padding-left: 2rem;
+  margin: 1.2rem 0;
+}
+
+li {
+  margin: 0.7rem 0;
+  font-size: 1.1rem;
+}
+
+.sotho-list li {
+  list-style-type: "• ";
+  color: #4e3a28;
+}
+
+.sotho-list li::marker {
+  color: #b5713c;
+  font-size: 1.3rem;
+}
+
+ol.sotho-list li::marker {
+  font-weight: 700;
+  color: #9b6e45;
+}
+
+/* external links */
+a.external {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%238b5a2b" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>') no-repeat right center;
+  background-size: 1rem;
+  padding-right: 1.6rem;
+  color: #7b4b2a;
+  font-weight: 500;
+}
+
+footer {
+  margin-top: 4rem;
+  text-align: center;
+  color: #7b6b5c;
+  border-top: 2px dashed #d4b28c;
+  padding: 2.2rem 0.5rem 1.5rem;
+  font-size: 1rem;
+}
+
+.sotho-footer {
+  font-size: 0.95rem;
+  color: #ac8b6b;
+  margin-top: 0.4rem;
+}
+
+/* responsiveness */
+@media (max-width: 720px) {
+  .page-wrapper { padding: 1rem; }
+  h1 { font-size: 2rem; }
+  .sotho-large { font-size: 1.2rem; }
+  nav { flex-direction: column; text-align: center; }
+  nav ul { gap: 0.8rem; }
+  .hero-panel { padding: 1.5rem; }
+  .sotho-quote { font-size: 1.2rem; }
+}
+
+@media (max-width: 480px) {
+  .grid-2col, .grid-3col { gap: 1.2rem; }
+}
